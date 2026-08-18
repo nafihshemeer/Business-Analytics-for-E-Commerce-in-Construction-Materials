@@ -151,3 +151,6 @@ The products were first distributed to each the month, with more or less the sam
 |	March	|	619	|	229	|	104	|	211	|	75
 
 The rows for each month were split using List.Numbers function in Power Query, and rows corresponding to each product category were obtained for all months. A random number was assigned to each row using rand() function, and the 5,944 rows were were sorted by month and then by the random number. The sorting process was repeated until a satisfactory level of randomness was observed. The product column was then pasted to the Enquiry Master sheet, with one enquiry ID mapped to one product category.
+
+## Assigning Pincodes
+A postal index number code (Pincode) is a six digit number used by the Department of Posts of India to represent locations in the country. In this analysis, the Pincode has been taken as the proxy for addresses for the purpose of simplification. Pincodes have been assigned separately for customers and enquiries. The former corresponds to the customer's/firm's address, while the latter corresponds to the actual construction site.
