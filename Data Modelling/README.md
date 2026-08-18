@@ -75,8 +75,8 @@ The next challenge was to assign enquiries to the dates in FY23. A calendar was 
 4. The days between 10-12 December, 2022 were marked as affected by Cyclone Mandous (which had affected normal life in general and construction projects in particular in the city)
 5. The remaining days were assigned the status of "Working Days"
 
-The next process was to assign a chronology to the 5,944 enquiries. The steps were as follows:
-1. Zero enquiries were assumed adn subsequently assigned on Sundays, holidays and the days affected by the cyclone
+The next process was to divide the 5,944 enquiries for 12 months. The steps were as follows:
+1. Zero enquiries were assumed and subsequently assigned on Sundays, holidays and the days affected by the cyclone
 2. For the remaining days, the business was assumed to have a general rising trend, with intentional dips on some days or seasons.
 3. A small dip was assumed in September and October due to festivities and local factors, culminating in a rise in November
 4. As the firm was based in Chennai, a dip in construction projects was expected in the Tamil month of Margazhi (December 16, 2022 to January 14, 2023), all the way to the festival of Pongal (January 14-16, 2023). However, the pent up demand was carried to the month of February
@@ -97,4 +97,28 @@ The next process was to assign a chronology to the 5,944 enquiries. The steps we
 |	February	|	566	|
 |	March	|	619	|
 
-6. Now the enquiries had to be assigned to each working day. The logic is as follows
+Now the enquiries had to be assigned to each working day. The logic is as follows:
+1. The working days were calculated for every month, and equal enquiries were initially assumed for each working day
+
+|	Month	|	Assigned Enquiries	|	Working Days per Month	|	Per Day Enquiries	|
+|	------	|	------	|	------	|	------	|
+|	April	|	421	|	21	|	20.04761905	|
+|	May	|	457	|	26	|	17.57692308	|
+|	June	|	468	|	26	|	18	|
+|	July	|	497	|	26	|	19.11538462	|
+|	August	|	570	|	25	|	22.8	|
+|	September	|	480	|	26	|	18.46153846	|
+|	October	|	476	|	23	|	20.69565217	|
+|	November	|	566	|	26	|	21.76923077	|
+|	December	|	383	|	25	|	15.32	|
+|	January	|	441	|	23	|	19.17391304	|
+|	February	|	566	|	24	|	23.58333333	|
+|	March	|	619	|	27	|	22.92592593	|
+
+2. Consider April. For the 21 working days, Excel randbetween() function was used to assign random enquiries between 14 and 21 for each day, and manually adjusted to get the total of 421. The numbers were also adjusted to ensure the day-level fluctuations were not dramatic.
+3. For the other months, a similar approach was obtained after adjusting the upper and lower limits of randbetween() function.
+4. Thus, the Calendar Master had enquiries attached to each day.
+5. The working days were sent to Power Query, and the rows for each date were split List.Numbers function based on the number of enquiries per day.
+6. The repeating dates were pasted to the Enquiry Master sheet, ensuring that each enquiry ID was mapped to only one date.
+
+With this, the dates were assigned to each enquiry.
