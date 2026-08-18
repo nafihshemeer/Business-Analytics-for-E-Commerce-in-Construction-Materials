@@ -97,4 +97,4 @@ The next process was to assign a chronology to the 5,944 enquiries. The steps we
 |	February	|	566	|
 |	March	|	619	|
 
-6. However, the enquiries had to be assigned to each working day
+6. Now the enquiries had to be assigned to each working day. The logic is as follows
