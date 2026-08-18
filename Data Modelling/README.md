@@ -124,4 +124,28 @@ Now the enquiries had to be assigned to each working day. The logic is as follow
 With this, the dates were assigned to each enquiry.
 
 ## Assigning Product Category to Enquiries
+The file named Product Master.xlsx lists the names and Item ID of 4 product categories namely Cement, AAC Blocks, Steel and Concrete. These have to be mapped to 5,944 enquiries. The assumption here is that there is only one product per enquiry. Weights for each product category were assumed and the number of enquiries were calculated as follows:  
 
+|	Item ID	|	Item Name	|	Enquiry Volume (%)	|	Total
+|	------	|	------	|	------	|	------
+|	I01	|	Cement	|	36.98	|	2198
+|	I02	|	Steel	|	17.01	|	1011
+|	I03	|	AAC Blocks	|	34.02	|	2022
+|	I04	|	Concrete	|	12.00	|	713
+
+The products were first distributed to each the month, with more or less the same weights. The values were adjusted to maintain whole numbers, and the final month-wise calculation was as follows:  
+
+|	Month	|	Total	|	Cement	|	Steel	|	AAC Blocks	|	Concrete
+|	------	|	------	|	------	|	------	|	------	|	------
+|	April	|	421	|	156	|	72	|	142	|	51
+|	May	|	457	|	171	|	77	|	154	|	55
+|	June	|	468	|	174	|	80	|	159	|	55
+|	July	|	497	|	184	|	83	|	171	|	59
+|	August	|	570	|	209	|	97	|	194	|	70
+|	September	|	480	|	178	|	82	|	163	|	57
+|	October	|	476	|	176	|	82	|	162	|	56
+|	November	|	566	|	209	|	97	|	192	|	68
+|	December	|	383	|	142	|	65	|	130	|	46
+|	January	|	441	|	159	|	77	|	152	|	53
+|	February	|	566	|	211	|	95	|	192	|	68
+|	March	|	619	|	229	|	104	|	211	|	75
