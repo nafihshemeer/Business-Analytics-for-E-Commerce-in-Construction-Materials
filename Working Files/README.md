@@ -55,5 +55,46 @@ To generate enquiries, each customer was allotted a random number of enquiries (
 Using list() function in Power Query, the customers were split into 5,944 rows, and shuffled using rand() function until a satisfactory randomness was obtained. This was then copied to the sheet named Enquiry Master.xlsx, and each enquiry was assigned a unique Enquiry ID. The enquiries were assigned to the salesperson as mapped to the respective customer. 
 
 ## Assigning Dates to Enquiries
-The next challenge was to assign enquiries to the dates in FY23. The steps are as follows:  
+The next challenge was to assign enquiries to the dates in FY23. A calendar was first created as per the following steps:  
 1. A sheet listing dates from April 1, 2022 to March 31, 2023 was prepared in the sheet named Calendar Master.xlsx.
+2. Days of the week were mapped automatically to the respective dates to check for Sundays.
+3. The following holidays as per the actual calendar were marked on the sheet:
+
+| Date | Day | Holiday |
+|---|---|---|
+| 14-Apr-22	| Thursday	| Tamil New Year |
+| 15-Aug-22	| Monday	| Independence Day |
+| 31-Aug-22	| Wednesday	| Vinayakar Chathurthi |
+| 04-Oct-22	| Tuesday	| Ayutha Pooja |
+| 05-Oct-22	| Wednesday	| Vijaya Dasami |
+| 24-Oct-22	| Monday	| Deepavali |
+| 16-Jan-23	| Monday	| Pongal |
+| 17-Jan-23	| Tuesday	| Pongal |
+| 26-Jan-23	| Thursday	| Republic Day |
+
+4. The days between 10-12 December, 2022 were marked as affected by Cyclone Mandous (which had affected normal life in general and construction projects in particular in the city)
+5. The remaining days were assigned the status of "Working Days"
+
+The next process was to assign a chronology to the 5,944 enquiries. The steps were as follows:
+1. Zero enquiries were assumed adn subsequently assigned on Sundays, holidays and the days affected by the cyclone
+2. For the remaining days, the business was assumed to have a general rising trend, with intentional dips on some days or seasons.
+3. A small dip was assumed in September and October due to festivities and local factors, culminating in a rise in November
+4. As the firm was based in Chennai, a dip in construction projects was expected in the Tamil month of Margazhi (December 16, 2022 to January 14, 2023), all the way to the festival of Pongal (January 14-16, 2023). However, the pent up demand was carried to the month of February
+5. The enquiries were broken down on a monthly basis to reflect the general rising trend and occasional dips. The enquiries were first assumed to be on average between 494-496 per month, and manually adjusted to reflect these assumptions. The final output is as follows:
+
+|	Month	|	Assigned Enquiries	|
+|	------	|	------	|
+|	April	|	421	|
+|	May	|	457	|
+|	June	|	468	|
+|	July	|	497	|
+|	August	|	570	|
+|	September	|	480	|
+|	October	|	476	|
+|	November	|	566	|
+|	December	|	383	|
+|	January	|	441	|
+|	February	|	566	|
+|	March	|	619	|
+
+6. However, the enquiries had to be assigned to each working day
