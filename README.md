@@ -20,4 +20,15 @@ The reports will reveal a snapshot of analytics as per Indian Fiscal Year 2022-2
 * The business is assumed to have 3 cement vendors, 4 AAC blocks vendors, 4 steel vendors, and 3 concrete vendors
 * Transportation and logistics shall be handled by 10 parties
 
-Further details have been revealed in the files of the respective dashboards
+## Creation and Integrity of Data
+The data for this project is completely fictional, and any resemblance to real world individuals or firms is coincidental. All the numbers and figures are 'handmade', using a combination of Excel randbetween() function and human judgement.  
+
+Minimal AI assistance has been used in this project, particularly for the following:  
+1. Mockarooo to generate customer names
+2. ChatGPT to check mathematical errors and inconsistencies, and assist in handling Excel formulae and DAX queries
+
+Despite being AI generated, some customer names have been intentionally edited to resemble real-world construction firms (Eg: Laurence Associates, Andrew Constructions etc). Some names have also been intentionally duplicated to simulate real difficulties in data handling. Some customer names have been edited to appear similar to each other as well (Eg: Samaria Construction and Samaria Constructions). 
+
+Thus, the data has been manipulated to reveal real-world patterns and constraints, as well as simulate realistic insights. The background, assumptions and codes/queries for each report have been uploaded in their respective folders, and further details can be viewed there.  
+
+Feel free to reach out to me for suggestions, doubts or feedback!
