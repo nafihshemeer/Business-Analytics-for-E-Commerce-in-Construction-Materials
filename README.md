@@ -21,7 +21,7 @@ The reports will reveal a snapshot of analytics as per Indian Fiscal Year 2022-2
 * Transportation and logistics shall be handled by 10 parties
 
 ## Creation and Integrity of Data
-The data for this project is completely fictional, and any resemblance to real world individuals or firms is coincidental. All the numbers and figures are 'handmade', using a combination of Excel randbetween() function and human judgement. Simplified versions of the Excel sheets (without formulas and queries) used to prepare these reports have been uploaded under the folder named "Excel"  
+The data for this project is completely fictional, and any resemblance to real world individuals or firms is coincidental. All the numbers and figures are 'handmade', using a combination of Excel randbetween() function and human judgement. Simplified versions of the Excel sheets (without formulas and queries) used to prepare these reports have been uploaded under the folder named "Excel".  
 
 Minimal AI assistance has been used in this project, particularly for the following:  
 1. Mockarooo to generate customer names
