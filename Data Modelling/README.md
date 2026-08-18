@@ -116,9 +116,12 @@ Now the enquiries had to be assigned to each working day. The logic is as follow
 |	March	|	619	|	27	|	22.92592593	|
 
 2. Consider April. For the 21 working days, Excel randbetween() function was used to assign random enquiries between 14 and 21 for each day, and manually adjusted to get the total of 421. The numbers were also adjusted to ensure the day-level fluctuations were not dramatic.
-3. For the other months, a similar approach was obtained after adjusting the upper and lower limits of randbetween() function.
+3. For the other months, a similar approach was followed after adjusting the upper and lower limits of randbetween() function.
 4. Thus, the Calendar Master had enquiries attached to each day.
-5. The working days were sent to Power Query, and the rows for each date were split List.Numbers function based on the number of enquiries per day.
+5. The working days were loaded into Power Query, and the rows for each date were split List.Numbers function based on the number of enquiries per day.
 6. The repeating dates were pasted to the Enquiry Master sheet, ensuring that each enquiry ID was mapped to only one date.
 
 With this, the dates were assigned to each enquiry.
+
+## Assigning Product Category to Enquiries
+
