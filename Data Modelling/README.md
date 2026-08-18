@@ -1,8 +1,8 @@
-# Working Files for the Project
+# Data Modelling
 The mechanism and logic behind creation and integrity of the data for this project are presented in this section.
 
 ## Background
-The project simulates selected aspects of an e-commerce business firm in Chennai, Tamil Nadu, which deals with four product categories namely Cement, AAC Blocks, Steel and Concrete. The data reflect a snapshot of Indian fiscal year 2022-23 (FY23 - April 1, 2022 to March 31, 2023). Therefore local factors like customs naming conventions and regional Pincodes have been infused into the data.
+The project simulates selected aspects of an e-commerce business firm in Chennai, Tamil Nadu, which deals with four product categories namely Cement, AAC Blocks, Steel and Concrete. The data reflect a snapshot of Indian fiscal year 2022-23 (FY23 - April 1, 2022 to March 31, 2023). Therefore local factors like customs, naming conventions and regional Pincodes have been infused into the data.
 
 ## Employee Data
 A total of 23 employees have been involved in the transactions pertaining to this analysis. The employees have been assigned a unique ID, and the names have been inspired by popular movie characters.  
@@ -45,14 +45,14 @@ Another constraint was that real businesses can be conducted as per B2B (Busines
 | Design and Developers	| 3 |
 | Developer	| 4 |  
 
-The rows were split using list() function in Power Query and the firm names were edited accordingly. Some firm names were again intentionally manipulated to reflect real world messy data (Eg: Samaria Construction and Samaria Constructions).  
+The rows were split using List.Numbers function in Power Query and the firm names were edited accordingly. Some firm names were again intentionally manipulated to reflect real world messy data (Eg: Samaria Construction and Samaria Constructions).  
 The remaining customers were assigned "Individual (B2C)" status.  
 
 ## Generating Enquiries
 An enquiry is the act of a customer where he/she asks for availability of the product, while specifying his/her preferences and negotiating for his/her limitations. It is the first step in the business transaction.  
 To generate enquiries, each customer was allotted a random number of enquiries (between 1 and 60) until a satisfactory mix of regular and infrequent customers was obtained. The total number of enquiries for 500 customers in FY23 added up to 5,944. This number was fixed for upcoming calculations.  
 
-Using list() function in Power Query, the customers were split into 5,944 rows, and shuffled using rand() function until a satisfactory randomness was obtained. This was then copied to the sheet named Enquiry Master.xlsx, and each enquiry was assigned a unique Enquiry ID. The enquiries were assigned to the salesperson as mapped to the respective customer. 
+Using List.Numbers function in Power Query, the customers were split into 5,944 rows, and shuffled using rand() function until a satisfactory randomness was obtained. This was then copied to the sheet named Enquiry Master.xlsx, and each enquiry was assigned a unique Enquiry ID. The enquiries were assigned to the salesperson as mapped to the respective customer. 
 
 ## Assigning Dates to Enquiries
 The next challenge was to assign enquiries to the dates in FY23. A calendar was first created as per the following steps:  
