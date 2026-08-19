@@ -85,7 +85,11 @@ From the report, the following observations can be made:
 4. Trend by Customer Type
    1. There is a clear bias towards B2C transactions, as only 1/3rd of the enquiries come from firms (B2B)
 
-## Business Recommendation
+## Business Recommendations
+The following are the recommendations for the business to maintain the momentum and prevent the crises seen in the report:
+### Short Term
+### Medium Term
+### Long Term
 
 
 # Limitations
