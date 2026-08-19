@@ -4,8 +4,8 @@ The project is based on my real experience in handling business analytics for M/
 ## Project Synopsis
 The project aims to recreate the following reports using synthetic data based on real world constraints and implications:  
 1. Enquiry Analytics
-2. Employee Productivity Analytics
-3. Fulfilment Analytics
+2. (Report under construction...)
+3. (Report under construction...)
   
 The reports will reveal a snapshot of analytics as per Indian Fiscal Year 2022-23 (FY23 - April 1, 2022 to March 31, 2023).  
 
