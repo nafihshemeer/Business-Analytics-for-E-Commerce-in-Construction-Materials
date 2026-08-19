@@ -21,10 +21,17 @@ The file named "Enquiries Analytics for FY23.pbix" contains an interactive Power
 
 ### Relationship Model
 The star schema is as follows: 
+
 <img width="1473" height="653" alt="image" src="https://github.com/user-attachments/assets/4f036bd6-3ee0-438d-8985-bc8c7e5cb785" />
 
+|	Column (From Table)	|	Column (To Table)	|	Cardinality	|	Cross-filter Direction	|
+|	------	|	------	|	------	|	------	|
+|	Customer ID (Enquiry Master)	|	cust_id (Customer Master)	|	Many to one (*:1)	|	Single	|
+|	Assigned To (Enquiry Master)	|	Employee Name (Sales Team)	|	Many to one (*:1)	|	Single	|
+|	Product (Enquiry Master)	|	Item Name (Product Master)	|	Many to one (*:1)	|	Single	|
+|	Assigned Date (Enquiry Master)	|	Date (Calender Master)	|	Many to one (*:1)	|	Single	|
+|	Location (Enquiry Master)	|	Area (Enquiry Pincode)	|	Many to one (*:1)	|	Single	|
 
-From Enquiry Master,
 
 # Limitations
 1. Due to synthetic nature of the data, some numbers can appear to be dramatic. For instance, the visual named "Top 10 Customers" contains 4 customers tied at 60 enquiries.
