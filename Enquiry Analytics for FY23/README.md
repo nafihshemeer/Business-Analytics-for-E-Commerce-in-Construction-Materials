@@ -38,16 +38,18 @@ Thus the relationships were mapped between the tables.
 ### Enquiry Analytics Report:
 A screenshot of the report has been pasted below:
 <img width="2075" height="1200" alt="Enquiries Analytics for FY23_page-0001" src="https://github.com/user-attachments/assets/f917aa35-57f3-4ba2-a01f-29bc39bbc69c" />
+
+
 A concise explanation of the visuals is given below:
 1. The top consists of the title bar
 2. The Key Performance Indicators (KPIs) are placed in the top left below the title bar, consisting of:
-  * Total enquiries generated in the period under consideration
-  * Total customers in the period under consideration
-  * Enquiries as of the most recent date, compared to the previous date
-  * Month-to-Date (MTD) enquiries as of the most recent date, compared to the same day in the previous month 
+   * Total enquiries generated in the period under consideration
+   * Total customers in the period under consideration
+   * Enquiries as of the most recent date, compared to the previous date
+   * Month-to-Date (MTD) enquiries as of the most recent date, compared to the same day in the previous month 
 3. Two filters are placed on the top right below the title bar:
-  * Salesperson: To help filter salesperson level data, which would be useful for review meetings
-  * Calendar Slicer: To filter data across periods to aid in useful analyses
+   * Salesperson: To help filter salesperson level data, which would be useful for review meetings
+   * Calendar Slicer: To filter data across periods to aid in useful analyses
 4. Monthly Enquiries: A variation of the number of enquiries by month is presented here. The visual can be drilled down to the day level
 5. 
 
