@@ -16,8 +16,14 @@ Some context and assumptions behind this report are as follows:
    * Mockarooo to generate customer names
    * ChatGPT to check for mathematical errors and inconsistencies, and assist in handling Excel formulae and DAX queries. The DAX queries have been uploaded in this folder.
 
-# Enquiries Analytics
+# Enquiry Analytics
+The file named "Enquiries Analytics for FY23.pbix" contains an interactive PowerBI dashboard to analyse the enquiries received on FY23. The interactive dashboard cannot be embedded here thanks to Microsoft's rigid account policies.  
 
+### Relationship Model
+The star schema is as follows: 
+<img width="1470" height="712" alt="image" src="https://github.com/user-attachments/assets/e51393df-a79f-469d-bf49-b7a5fb21ac47" />
+
+From Enquiry Master,
 
 # Limitations
 1. Due to synthetic nature of the data, some numbers can appear to be dramatic. For instance, the visual named "Top 10 Customers" contains 4 customers tied at 60 enquiries.
