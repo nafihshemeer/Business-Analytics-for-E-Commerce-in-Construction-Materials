@@ -11,8 +11,9 @@ Some context and assumptions behind this report are as follows:
 3. A total of 500 customers have generated 5,944 enquiries in the period under consideration
 4. The customers are handled by 10 salespersons
 5. Each enquiry is assumed to correspond to one product
-6. Postal Pincode has been taken as the proxy for the location of the construction site for which the enquiry is being generated, and need not be identical to the actual address of the customer
-7. Minimal AI assistance has been used in this project, particularly for the following:
+6. Sundays, holidays and days affected by Cyclone have been assumed to have zero enquiries
+7. Postal Pincode has been taken as the proxy for the location of the construction site for which the enquiry is being generated, and need not be identical to the actual address of the customer
+8. Minimal AI assistance has been used in this project, particularly for the following:
    * Mockarooo to generate customer names
    * ChatGPT to check for mathematical errors and inconsistencies, and assist in handling Excel formulae and DAX queries. The DAX queries have been uploaded in this folder.
 
