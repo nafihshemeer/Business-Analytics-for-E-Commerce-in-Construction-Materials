@@ -64,18 +64,27 @@ The interactions can be clearly seen in this report when the user wants to probe
 
 ## Business Observations and Inferences:
 From the report, the following observations can be made:
-1. The business reflects a general rising trend, with dips seen in September-October and December.
-2.    The September-October dip seems to be consistent with the number is April-June, and the high in August is the likely anomaly
-3. The December dip is explained by a multitude of external factors:
-   * The cyclone Mandous which made landfall in the Bay of Bengal affected the construction industry during 10-12 December, 2022
-   * According to local custom, new projects are not generally initiated in the Tamil month of Margazhi (December 16, 2022 to January 14, 2023). This led to reduced demand.
-   * Other festivals like Christmas and New Year, and general monsoon conditions (Northeast Monsoon) affected demand in the construction sector during this period
-4. The dip in December continued until the festival of Pongal (January 14-16, 2023). However, the actual rise in demand was revealed in February.
-5. Post-Pongal, the business continued in its general rising trend
-6. Geographically, the areas close to Tambaram have larger bubbles, thanks to a construction boom in the region.
-7. Larger bubbles are also seen in the East Coast Road (ECR) region, as well as 
-8. .
-9. 
+1. Monthly Trends
+   1. The business reflects a general rising trend, with dips seen in September-October and December.
+   2. The September-October dip seems to be consistent with the number is April-June, and the high in August is the likely anomaly
+   3. The December dip is explained by a multitude of external factors:
+      * The cyclone Mandous which made landfall in the Bay of Bengal affected the construction industry during 10-12 December, 2022
+      * According to local custom, new projects are not generally initiated in the Tamil month of Margazhi (December 16, 2022 to January 14, 2023). This led to reduced demand.
+      * Other festivals like Christmas and New Year, and general monsoon conditions (Northeast Monsoon) affected demand in the construction sector during this period
+   5. The dip in December continued until the festival of Pongal (January 14-16, 2023). However, the actual rise in demand was revealed in February.
+   6. Post-Pongal, the business continued in its general rising trend
+2. Geographical Trends
+   1. The areas close to Tambaram have larger bubbles, thanks to a construction boom in the region.
+   2. Larger bubbles are also seen in the East Coast Road (ECR) region (like Sholinganallur), as well as in areas of new Metro Rail constructions (like Valasaravakkam)
+   3. The bubbles are smaller in interior Chennai city (like in Chepauk and Chintadripet), reflecting lower demand for construction projects
+   4. The areas to the northwest around Avadi and Villivakkam have virtually zero enquiries, which is also seen in the region between Tambaram and ECR
+3. Trend by Product Category
+   1. Cement is the dominant product, closely followed by AAC blocks
+   2. Steel and Concrete enquiries need more catching up 
+4. Trend by Customer Type
+   1. There is a clear bias towards B2C transactions, as only 1/3rd of the enquiries come from firms (B2B)
+
+## Business Recommendation
 
 
 # Limitations
