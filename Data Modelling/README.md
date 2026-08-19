@@ -168,5 +168,32 @@ Based on my real experience and prevailing trends, weights for the number of enq
 
 The data under the column named "No of Pincodes" was manually adjusted until a satisfactory distribution was obtained. 
 
-Using List.Numbers() function of Power Query, the Divisions were duplicated into the same numbers of rows as the "No of Pincodes" column above. Then, from the "TN Pincodes.pdf" Query mentioned earlier, relevant Pincodes based on actual construction prevalence were selected and pasted next to the table. The number of enquiries were manually adjusted for these locations based on real world trends and limitations until a satisfactory mix was obtained. For instance, Koyambedu had fewer enquiries than the nearby areas of Arumbakkam and Nerkundram because the former is more of a transport hub and while the latter areas had a higher preference of residential and infrastructure projects. 
-As an example, the data for "Chennai City South" is presented here:
+Using List.Numbers() function of Power Query, the Divisions were duplicated into the same numbers of rows as the "No of Pincodes" column above. Then, from the "TN Pincodes.pdf" Query mentioned earlier, relevant Pincodes based on actual construction prevalence were selected and pasted next to the table. The number of enquiries were manually adjusted for these locations based on real world trends and limitations until a satisfactory mix was obtained. For instance, Koyambedu had fewer enquiries than the nearby areas of Arumbakkam and Nerkundram because the former is more of a transport hub and while the latter areas had a higher preference of residential and infrastructure projects.  
+
+As an example, the data for "Chennai City North" is presented here:
+
+|	Postal Division	|	Area	|	Pincode	|	No of Enquiries	|
+|	------	|	------	|	------	|	------	|
+|	Chennai City North	|	Koyambedu S.O	|	600107	|	148	|
+|	Chennai City North	|	Nerkundram S.O	|	600107	|	178	|
+|	Chennai City North	|	Washermanpet East S.O	|	600021	|	57	|
+|	Chennai City North	|	Perambur S.O	|	600011	|	177	|
+|	Chennai City North	|	Chintadripet	|	600002	|	88	|
+|	Chennai City North	|	Arumbakkam S.O	|	600106	|	187	|
+|	Chennai City North	|	Vyasarpadi S.O	|	600039	|	152	|
+
+This data was loaded into Power Query, and the rows were duplicated as per the "No of Enquiries" column using the List.Numbers() function. With this, 5,944 rows were obtained. Using rand() function, a random number was allotted to these rows and then sorted, until a realistic mix was observed. The rows of these Pincodes along with the Area Name was pasted into the Enquiry Master sheet.
+
+### Assigning Pincodes to Customers
+Customer addresses were assumed to be spread across 35 Pincodes. The customers were spread across the 4 Postal Divisions mentioned earlier as per the calculation below:
+
+|	Division	|	Composition (%)	|	No of Customers	|	No of Pincodes	|
+|	------	|	------	|	------	|	------	|
+|	Tambaram	|	40	|	200	|	6	|
+|	Chennai City North	|	16	|	80	|	8	|
+|	Chennai City South	|	30	|	150	|	12	|
+|	Chennai City Central	|	14	|	70	|	9	|
+
+The rows were first split as per "No of Pincodes" in Power Query and the locations were assigned manually from the TN Pincodes file. The rows were split again as per  the "No of Customers" column to obtain 500 rows. These rows were assigned a random number (using rand()) and shuffled until a realistic arrangement was obtained. The area names and pincodes were pasted into the Customer Master sheet.
+
+## Conclusion
