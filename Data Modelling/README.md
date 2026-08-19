@@ -153,4 +153,20 @@ The products were first distributed to each the month, with more or less the sam
 The rows for each month were split using List.Numbers function in Power Query, and rows corresponding to each product category were obtained for all months. A random number was assigned to each row using rand() function, and the 5,944 rows were were sorted by month and then by the random number. The sorting process was repeated until a satisfactory level of randomness was observed. The product column was then pasted to the Enquiry Master sheet, with one enquiry ID mapped to one product category.
 
 ## Assigning Pincodes
-A postal index number code (Pincode) is a six digit number used by the Department of Posts of India to represent locations in the country. In this analysis, the Pincode has been taken as the proxy for addresses for the purpose of simplification. Pincodes have been assigned separately for customers and enquiries. The former corresponds to the customer's/firm's address, while the latter corresponds to the actual construction site.
+A postal index number code (Pincode) is a six digit number used by the Department of Posts of India to represent locations in the country. In this analysis, the Pincode has been taken as the proxy for addresses for the purpose of simplification. Pincodes have been assigned separately for customers and enquiries. The former corresponds to the customer's/firm's address, while the latter corresponds to the actual construction site. The file named "Pincodes.xlsx" contains the list of Pincodes allotted to both enquiries and customers.
+
+### Assigning Pincodes to Enquiries
+To obtain the Pincodes, the file named "TN Pincodes.pdf" was downloaded from the India Post website and loaded into Power Query. Four postal divisions namely Tambaram, Chennai City North, Chennai City South and Chennai City Central were chosen to represent the Chennai region. The enquiries were assumed to be distributed across 45 Pincodes.
+Based on my real experience and prevailing trends, weights for the number of enquiries were attached to these postal divisions, and the result was calculated as follows:
+
+|	Division	|	Composition (%)	|	No of Enquiries	|	No of Pincodes	|
+|	------	|	------	|	------	|	------	|
+|	Tambaram	|	40.02	|	2379	|	18	|
+|	Chennai City North	|	16.60	|	987	|	7	|
+|	Chennai City South	|	28.36	|	1686	|	12	|
+|	Chennai City Central	|	15.01	|	892	|	8	|
+
+The data under the column named "No of Pincodes" was manually adjusted until a satisfactory distribution was obtained. 
+
+Using List.Numbers() function of Power Query, the Divisions were duplicated into the same numbers of rows as the "No of Pincodes" column above. Then, from the "TN Pincodes.pdf" Query mentioned earlier, relevant Pincodes based on actual construction prevalence were selected and pasted next to the table. The number of enquiries were manually adjusted for these locations based on real world trends and limitations until a satisfactory mix was obtained. For instance, Koyambedu had fewer enquiries than the nearby areas of Arumbakkam and Nerkundram because the former is more of a transport hub and while the latter areas had a higher preference of residential and infrastructure projects. 
+As an example, the data for "Chennai City South" is presented here:
