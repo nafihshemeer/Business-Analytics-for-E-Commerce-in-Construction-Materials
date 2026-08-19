@@ -1,6 +1,18 @@
 # Data Modelling
 The mechanism and logic behind creation and integrity of the data for this project are presented in this section.
 
+##Contents
+1. [Background] (#background)
+2. [Employee Data] (#employee-data)
+3. [Generating Customers] (#generating-customers)
+4. [Generating Enquiries] (#generating-enquiries)
+5. [Assigning Dates to Enquiries] (#assigning-dates-to-enquiries)
+6. [Assigning Product Category to Enquiries] (#assigning-product-category-to-enquiries)
+7. [Assigning Pincodes] (#assigning-pincodes)
+   * [Assigning Pincodes to Enquiries] (#assigning-pincodes-to-enquiries)
+   * [Assigning Pincodes to Customers] (#assigning-pincodes-to-customers)
+8. [Conclusion] (#conclusion)
+
 ## Background
 The project simulates selected aspects of an e-commerce business firm in Chennai, Tamil Nadu, which deals with four product categories namely Cement, AAC Blocks, Steel and Concrete. The data reflect a snapshot of Indian fiscal year 2022-23 (FY23 - April 1, 2022 to March 31, 2023). Therefore local factors like customs, naming conventions and regional Pincodes have been infused into the data.
 
