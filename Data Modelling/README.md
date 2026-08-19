@@ -197,3 +197,14 @@ Customer addresses were assumed to be spread across 35 Pincodes. The customers w
 The rows were first split as per "No of Pincodes" in Power Query and the locations were assigned manually from the TN Pincodes file. The rows were split again as per  the "No of Customers" column to obtain 500 rows. These rows were assigned a random number (using rand()) and shuffled until a realistic arrangement was obtained. The area names and pincodes were pasted into the Customer Master sheet.
 
 ## Conclusion
+A summary of the work done is as follows:
+1. A total of 23 employees was assumed for the analysis and distributed across the Sales, Procurement and Fulfilment teams
+2. A total of 500 customers were assumed to have been involved in some form on interaction with the business in FY23. Customer names could be duplicate or nearly identical, and they were split between B2B (business-to-business) and B2C (business-to-customer) modes of transaction
+3. The customers generated 5,944 enquiries in FY23. Enquiry generation was affected by Sundays, festivals, local customs and other factors affecting customer demand
+4. A calendar was allotted to account for day-level distribution of enquiries.
+5. Each enquiry corresponded to 1 product category, and the mix was accounted for upto the day-level
+6. Pincodes based on the Chennai region were allotted separately to enquiries and customers
+
+Thus, the data for an e-commerce business facing a general rising trend in the number of enquiries for FY23 was constructed. Further details of relationship schemas, codes and queries can be viewed in the folders of the respective reports.
+
+Feel free to contact me for queries and feedback!
