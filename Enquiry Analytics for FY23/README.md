@@ -60,6 +60,23 @@ A concise explanation of the visuals is given below:
 The monthly enquiries chart can be drilled down to the day level. For instance, the month of February is presented here:
 <img width="2075" height="1200" alt="February Daily Analytics_page-0001" src="https://github.com/user-attachments/assets/61937219-959e-455d-85bd-eac277addd89" />
 
+The interactions can be clearly seen in this report when the user wants to probe one aspect of a chart deeply.  
+
+## Business Observations and Inferences:
+From the report, the following observations can be made:
+1. The business reflects a general rising trend, with dips seen in September-October and December.
+2.    The September-October dip seems to be consistent with the number is April-June, and the high in August is the likely anomaly
+3. The December dip is explained by a multitude of external factors:
+   * The cyclone Mandous which made landfall in the Bay of Bengal affected the construction industry during 10-12 December, 2022
+   * According to local custom, new projects are not generally initiated in the Tamil month of Margazhi (December 16, 2022 to January 14, 2023). This led to reduced demand.
+   * Other festivals like Christmas and New Year, and general monsoon conditions (Northeast Monsoon) affected demand in the construction sector during this period
+4. The dip in December continued until the festival of Pongal (January 14-16, 2023). However, the actual rise in demand was revealed in February.
+5. Post-Pongal, the business continued in its general rising trend
+6. Geographically, the areas close to Tambaram have larger bubbles, thanks to a construction boom in the region.
+7. Larger bubbles are also seen in the East Coast Road (ECR) region, as well as 
+8. .
+9. 
+
 
 # Limitations
 1. Due to synthetic nature of the data, some numbers can appear to be dramatic. For instance, the visual named "Top 10 Customers" contains 4 customers tied at 60 enquiries.
