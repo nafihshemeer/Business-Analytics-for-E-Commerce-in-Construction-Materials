@@ -27,7 +27,7 @@ The data pertaining to employees are as presented in this table:
 | Fulfilment Team | Fulfilment Employees.xlsx | Names and IDs of 5 employees in the Fulfilment team |
 
 ## Generating Customers
-The details of customers can be viewed in the sheet named Customer Master.xlsx. Using Mockaroo API, a total of 500 unique customers was generated along with their gender. A unique customer ID (cust_ID) was assigned to each customer.  
+The details of customers can be viewed in the sheet named Customer Master.xlsx. A total of 500 unique customers was generated using Mockaroo API. A unique customer ID (cust_ID) was then assigned to each customer.  
 
 However, real data is messy and riddled with duplicates. Thus some names were selected at random and made to duplicate their preceding rows. Some names have been duplicated thrice, although most duplicates appeared twice per name. To preserve uniqueness outside the cust_ID, phone numbers were assumed to be unique for each customer. These unique phone numbers (with +91 code) were generated using randbetween() function, and corrected for duplicates.  
 
