@@ -22,7 +22,8 @@ The file named "Enquiries Analytics for FY23.pbix" contains an interactive Power
 ### Relationship Model
 The star schema is as follows: 
 
-<img width="1473" height="653" alt="image" src="https://github.com/user-attachments/assets/4f036bd6-3ee0-438d-8985-bc8c7e5cb785" />
+<img width="1473" height="653" alt="image" src="https://github.com/user-attachments/assets/4f036bd6-3ee0-438d-8985-bc8c7e5cb785" />  
+
 
 |	Column (From Table)	|	Column (To Table)	|	Cardinality	|	Cross-filter Direction	|
 |	------	|	------	|	------	|	------	|
@@ -31,6 +32,12 @@ The star schema is as follows:
 |	Product (Enquiry Master)	|	Item Name (Product Master)	|	Many to one (*:1)	|	Single	|
 |	Assigned Date (Enquiry Master)	|	Date (Calender Master)	|	Many to one (*:1)	|	Single	|
 |	Location (Enquiry Master)	|	Area (Enquiry Pincode)	|	Many to one (*:1)	|	Single	|
+
+Thus the relationships were mapped between the tables.
+
+### Enquiry Analytics Report:
+A screenshot of the report has been pasted below:
+<img width="2075" height="1200" alt="Enquiries Analytics for FY23_page-0001" src="https://github.com/user-attachments/assets/f917aa35-57f3-4ba2-a01f-29bc39bbc69c" />
 
 
 # Limitations
