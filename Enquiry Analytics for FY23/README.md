@@ -50,8 +50,16 @@ A concise explanation of the visuals is given below:
 3. Two filters are placed on the top right below the title bar:
    * Salesperson: To help filter salesperson level data, which would be useful for review meetings
    * Calendar Slicer: To filter data across periods to aid in useful analyses
-4. Monthly Enquiries: A variation of the number of enquiries by month is presented here. The visual can be drilled down to the day level
-5. 
+4. Monthly Enquiries: A visual explaining the monthly variation of the number of enquiries is presented here. The visual can be drilled down to the day level
+5. Top 10 Customers: A leader-board of the customers generating highest number of enquiries, along with the corresponding salesperson is shown here
+6. Enquiries by Location: The geographical spread in the number of enquiries is shown in a bubble chat
+7. Enquiries by Product Category: The breakup of enquiries as per products preferred by the customers is revealed here
+8. Enquiries by Customer Type: The B2B vs B2C breakup of customers is illustrated here
+
+### Drilling Down
+The monthly enquiries chart can be drilled down to the day level. For instance, the month of February is presented here:
+<img width="2075" height="1200" alt="February Daily Analytics_page-0001" src="https://github.com/user-attachments/assets/61937219-959e-455d-85bd-eac277addd89" />
+
 
 # Limitations
 1. Due to synthetic nature of the data, some numbers can appear to be dramatic. For instance, the visual named "Top 10 Customers" contains 4 customers tied at 60 enquiries.
