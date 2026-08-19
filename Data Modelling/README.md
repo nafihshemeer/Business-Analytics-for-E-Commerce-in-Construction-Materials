@@ -1,7 +1,7 @@
 # Data Modelling
 The mechanism and logic behind creation and integrity of the data for this project are presented in this section.
 
-##Contents
+## Contents
 1. [Background] (#background)
 2. [Employee Data] (#employee-data)
 3. [Generating Customers] (#generating-customers)
