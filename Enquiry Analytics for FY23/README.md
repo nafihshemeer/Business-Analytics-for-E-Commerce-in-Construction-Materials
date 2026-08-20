@@ -2,9 +2,21 @@
 
 The report presents a snapshot of customer enquiries received by the e-commerce firm in Indian fiscal year 2022-23 (FY23 - April 1, 2022 to March 31, 2023).
 
-# Table of Contents
+## Table of Contents
+1. [Background and Assumptions](#background-and-assumptions)
+2. [Enquiry Analytics](#enquiry-analytics)
+   * [Relationship Model](#relationship-model)
+   * [Enquiry Analytics Report](#enquiry-analytics-report)
+   * [Drilling Down](#drilling-down)
+3. [Business Observations and Inferences](#business-observations-and-inferences)
+4. [Business Recommendations](#business-recommendations)
+   * [Short-Term](#short-term)
+   * [Medium-Term](#medium-term)
+   * [Long-Term](#long-term)
+5. [Limitations](#limitations)
+6. [Conclusion](#conclusion)
 
-# Background and Assumptions
+## Background and Assumptions
 An enquiry is generated when a customer requires a product for his/her construction site. The customer is assigned a salesperson, and factors like product requirements, site location, delivery date and customer budget are discussed.  It is the first step in the business transaction. The calculations and logic involved behind creating the enquiries in this analysis have been dealt with in detail in the folder named "Data Modelling".  
 
 Some context and assumptions behind this report are as follows:
@@ -19,7 +31,7 @@ Some context and assumptions behind this report are as follows:
    * Mockarooo to generate customer names
    * ChatGPT to check for mathematical errors and inconsistencies, and assist in handling Excel formulae and DAX queries. The DAX queries have been uploaded in this folder.
 
-# Enquiry Analytics
+## Enquiry Analytics
 The file named "Enquiries Analytics for FY23.pbix" contains an interactive PowerBI dashboard to analyse the enquiries received on FY23. The interactive dashboard cannot be embedded here thanks to Microsoft's rigid account policies.  
 
 ### Relationship Model
@@ -38,7 +50,7 @@ The star schema is as follows:
 
 Thus the relationships were mapped between the tables.
 
-### Enquiry Analytics Report:
+### Enquiry Analytics Report
 A screenshot of the report has been pasted below:
 <img width="2075" height="1200" alt="Enquiries Analytics for FY23_page-0001" src="https://github.com/user-attachments/assets/f917aa35-57f3-4ba2-a01f-29bc39bbc69c" />
 
@@ -65,7 +77,7 @@ The monthly enquiries chart can be drilled down to the day level. For instance, 
 
 The interactions can be clearly seen in this report when the user wants to probe one aspect of a chart deeply.  
 
-## Business Observations and Inferences:
+## Business Observations and Inferences
 From the report, the following observations can be made:
 1. Monthly Trends
    1. The business reflects a general rising trend, with dips seen in September-October and December.
@@ -91,16 +103,16 @@ From the report, the following observations can be made:
 
 ## Business Recommendations
 The following are the recommendations for the business to maintain the momentum and prevent the crises seen in the report:
-### Short Term
+### Short-Term
 1.  A higher investment in digital marketing can boost enquiries, as seen in the increase in number of enquiries on August.
 2.  The most loyal customers can be rewarded with discounts, freebies or vouchers (like gifts or vacation tickets).
 3.  The region between Tambaram and ECR, as well as the region to the northeast of Chennai desperately need more marketing and outreach by the company. This can be done through cold calls, salesperson visits and targeted digital marketing
-### Medium Term
+### Medium-Term
 1. A dip was seen during Cyclone Mandous and in days with heavy rains. Customers can be given an option to insure their products with an additional charge, thus incentivising them to conduct more transactions with our firm. A tie up with potential insurance firms may be explored in this regard.
 2. Steel and concrete sales are the 'cash cows' of the construction sector and will lead to higher margins for the business. A more aggressive campaign is required to onboard customers to buy these products.
 3. Customers can be segmented based on age, gender (if individual), locality and budget, and schemes can be targeted accordingly.
 4. Re-acquisition of customers who haven't submitted enquiries for more than 3 months can be prioritised, via cold calls or targeted ads.
-### Long Term
+### Long-Term
 1. Business-to-business (B2B) transactions should be aggressively targeted, and top-level meetings and contracts can be considered to establish relationships with construction firms.
 2. The dip due to seasonal and cultural factors (as seen in Margazhi month) can be potentially arrested by exploring contract relationships with customers, wherein the business provides construction products to the customer for the duration of the whole project in exchange for benefits like prioritised delivery or discounts. 
 
