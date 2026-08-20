@@ -61,7 +61,7 @@ The rows were split using List.Numbers function in Power Query and the firm name
 The remaining customers were assigned "Individual (B2C)" status.  
 
 ## Generating Enquiries
-An enquiry is the act of a customer where he/she asks for availability of the product, while specifying his/her preferences and negotiating for his/her limitations. It is the first step in the business transaction.  
+An enquiry is generated when a customer requires a product for his/her construction site. The customer is assigned a salesperson, and factors like product requirements, site location, delivery date and customer budget are discussed. It is the first step in the business transaction.  
 To generate enquiries, each customer was allotted a random number of enquiries (between 1 and 60) until a satisfactory mix of regular and infrequent customers was obtained. The total number of enquiries for 500 customers in FY23 added up to 5,944. This number was fixed for upcoming calculations.  
 
 Using List.Numbers function in Power Query, the customers were split into 5,944 rows, and shuffled using rand() function until a satisfactory randomness was obtained. This was then copied to the sheet named Enquiry Master.xlsx, and each enquiry was assigned a unique Enquiry ID. The enquiries were assigned to the salesperson as mapped to the respective customer. 
