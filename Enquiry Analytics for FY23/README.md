@@ -74,7 +74,8 @@ From the report, the following observations can be made:
       * Other festivals like Christmas and New Year, and general monsoon conditions (Northeast Monsoon) affected demand in the construction sector during this period
    5. The dip in December continued until the festival of Pongal (January 14-16, 2023). However, the actual rise in demand was revealed in February.
    6. Post-Pongal, the business continued in its general rising trend
-2. Geographical Trends
+2. 4 of the top 10 customers are tied at 60. However, no customer has ever crossed the three digit mark (100 enquiries) in a single year
+3. Geographical Trends
    1. The areas close to Tambaram have larger bubbles, thanks to a construction boom in the region.
    2. Larger bubbles are also seen in the East Coast Road (ECR) region (like Sholinganallur), as well as in areas of new Metro Rail constructions (like Valasaravakkam)
    3. The bubbles are smaller in interior Chennai city (like in Chepauk and Chintadripet), reflecting lower demand for construction projects
@@ -88,6 +89,7 @@ From the report, the following observations can be made:
 ## Business Recommendations
 The following are the recommendations for the business to maintain the momentum and prevent the crises seen in the report:
 ### Short Term
+1. 
 ### Medium Term
 ### Long Term
 
