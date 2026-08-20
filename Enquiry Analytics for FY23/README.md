@@ -67,31 +67,40 @@ The interactions can be clearly seen in this report when the user wants to probe
 From the report, the following observations can be made:
 1. Monthly Trends
    1. The business reflects a general rising trend, with dips seen in September-October and December.
-   2. The September-October dip seems to be consistent with the number is April-June, and the high in August is the likely anomaly
-   3. The December dip is explained by a multitude of external factors:
+   2. The September-October dip seems to be consistent with the numbers in April-June, and the high in August is the likely anomaly
+   3. The high in August appears to coincide with the fact that the digital marketing campaign was initiated in July. The reach towards the leads was boosted by Facebook as we were its new customer, and that may have contributed to the sudden spike in enquiries. However, the artificial free boost was revoked after August, showing the dip in September.
+   4. The December dip is explained by a multitude of external factors:
       * The cyclone Mandous which made landfall in the Bay of Bengal affected the construction industry during 10-12 December, 2022
       * According to local custom, new projects are not generally initiated in the Tamil month of Margazhi (December 16, 2022 to January 14, 2023). This led to reduced demand.
       * Other festivals like Christmas and New Year, and general monsoon conditions (Northeast Monsoon) affected demand in the construction sector during this period
    5. The dip in December continued until the festival of Pongal (January 14-16, 2023). However, the actual rise in demand was revealed in February.
    6. Post-Pongal, the business continued in its general rising trend
-2. 4 of the top 10 customers are tied at 60. However, no customer has ever crossed the three digit mark (100 enquiries) in a single year
+2. The first 4 of the top 10 customers are tied at 60. However, no customer has ever crossed the three digit mark (100 enquiries) in a single year
 3. Geographical Trends
    1. The areas close to Tambaram have larger bubbles, thanks to a construction boom in the region.
    2. Larger bubbles are also seen in the East Coast Road (ECR) region (like Sholinganallur), as well as in areas of new Metro Rail constructions (like Valasaravakkam)
    3. The bubbles are smaller in interior Chennai city (like in Chepauk and Chintadripet), reflecting lower demand for construction projects
    4. The areas to the northwest around Avadi and Villivakkam have virtually zero enquiries, which is also seen in the region between Tambaram and ECR
-3. Trend by Product Category
+4. Trend by Product Category
    1. Cement is the dominant product, closely followed by AAC blocks
    2. Steel and Concrete enquiries need more catching up 
-4. Trend by Customer Type
+5. Trend by Customer Type
    1. There is a clear bias towards B2C transactions, as only 1/3rd of the enquiries come from firms (B2B)
 
 ## Business Recommendations
 The following are the recommendations for the business to maintain the momentum and prevent the crises seen in the report:
 ### Short Term
-1. 
+1.  A higher investment in digital marketing can boost enquiries, as seen in the increase in number of enquiries on August.
+2.  The most loyal customers can be rewarded with discounts, freebies or vouchers (like gifts or vacation tickets).
+3.  The region between Tambaram and ECR, as well as the region to the northeast of Chennai desperately need more marketing and outreach by the company. This can be done through cold calls, salesperson visits and targeted digital marketing
 ### Medium Term
+1. A dip was seen during Cyclone Mandous and in days with heavy rains. Customers can be given an option to insure their products with an additional charge, thus incentivising them to conduct more transactions with our firm. A tie up with potential insurance firms may be explored in this regard.
+2. Steel and concrete sales are the 'cash cows' of the construction sector and will lead to higher margins for the business. A more aggressive campaign is required to onboard customers to buy these products.
+3. Customers can be segmented based on age, gender (if individual), locality and budget, and schemes can be targeted accordingly.
+4. Re-acquisition of customers who haven't submitted enquiries for more than 3 months can be prioritised, via cold calls or targeted ads.
 ### Long Term
+1. Business-to-business (B2B) transactions should be aggressively targeted, and top-level meetings and contracts can be considered to establish relationships with construction firms.
+2. The dip due to seasonal and cultural factors (as seen in Margazhi month) can be potentially arrested by exploring contract relationships with customers, wherein the business provides construction products to the customer for the duration of the whole project in exchange for benefits like prioritised delivery or discounts. 
 
 
 # Limitations
@@ -101,3 +110,6 @@ The following are the recommendations for the business to maintain the momentum 
 4. Pincodes do not show a reliable geographical spread as multiple enquiries can get concentrated in one bubble
 
 However, the data is fictional and constructed according to the best of my knowledge using human judgement without assistance from other individuals or AI to create the numbers or simulate real-world constraints and chaos. 
+
+# Conclusion
+The business
