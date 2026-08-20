@@ -1,6 +1,8 @@
 # Business Analytics for E-Commerce in Construction Materials
 
-<img width="1280" height="720" alt="E-Commerce Canva" src="https://github.com/user-attachments/assets/5a640a05-ce89-444a-b193-98aa3a78a005" />
+<p align="center">
+  <img width="600" alt="E-Commerce Canva" src="https://github.com/user-attachments/assets/5a640a05-ce89-444a-b193-98aa3a78a005" />
+</p>
 
 The project is based on my real experience in handling business analytics for M/S L1 Supply Networks Ltd, a Chennai-based start-up which aimed to bring e-commerce to construction materials. My tasks involved CRM analytics, account flows, employee productivity analytics, digital marketing leads analytics, and fulfilment metrics. A few snippets have been recreated here.
 
