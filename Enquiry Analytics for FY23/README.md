@@ -93,7 +93,7 @@ From the report, the following observations can be made:
 3. Geographical Trends
    1. The areas close to Tambaram have larger bubbles, thanks to a construction boom in the region.
    2. Larger bubbles are also seen in the East Coast Road (ECR) region (like Sholinganallur), as well as in areas of new Metro Rail constructions (like Valasaravakkam)
-   3. The bubbles are smaller in interior Chennai city (like in Chepauk and Chintadripet), reflecting lower demand for construction projects
+   3. The bubbles are smaller in interior Chennai city (as seen in Chepauk and Chintadripet), reflecting lower demand for construction projects
    4. The areas to the northwest around Avadi and Villivakkam have virtually zero enquiries, which is also seen in the region between Tambaram and ECR
 4. Trend by Product Category
    1. Cement is the dominant product, closely followed by AAC blocks
