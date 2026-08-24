@@ -55,12 +55,19 @@ A screenshot of the report has been pasted below:
 <img width="2075" height="1200" alt="Enquiries Analytics for FY23_page-0001" src="https://github.com/user-attachments/assets/f917aa35-57f3-4ba2-a01f-29bc39bbc69c" />
 
 
-A concise explanation of the visuals is given below:
+A concise explanation of the visuals along with mentions of relevant DAX queries are given below (The DAX queries can be viewed in the respective files as mentioned):
 1. The top consists of the title bar
 2. The Key Performance Indicators (KPIs) are placed in the top left below the title bar, consisting of:
-   * Total enquiries generated in the period under consideration
-   * Total customers in the period under consideration
-   * Enquiries as of the most recent date, compared to the previous date
+   * Total Enquiries: Total enquiries generated in the period under consideration
+     * A measure named "Total Enquiries" was created which listed the distinct count of enquiries in the "Enquiry Master" sheet
+     * Another measure named "Total Enquiries Display" was created by formatting Total Enquiries into thousands with comma separator
+   * Total customers
+     * Count of customer IDs in "Customer Master" sheet
+   * Enquiries - Most Recent Date: Enquiries as of the most recent date, compared to the previous date
+     * Two measures namely "Last Day Enquiries" and "Previous Day Enquiries" were created to return the most recent date and the date before that respectively
+     * A measure named "Formatted KPIs" was created to return the Last Day Enquiries and an arrow comparing its trend with Previous Day Enquiries. This measure was displayed on the KPI
+     * To obtain colours for rising and falling trends, a measure named "Formatted Color" was created to return Green, Red or Grey colours based on Rising, Falling or Neutral trends respectively
+     * To get the title in the format as displayed, a measure named "Enquiries Card Title" was created
    * Month-to-Date (MTD) enquiries as of the most recent date, compared to the same day in the previous month 
 3. Two filters are placed on the top right below the title bar:
    * Salesperson: To help filter salesperson level data, which would be useful for review meetings
