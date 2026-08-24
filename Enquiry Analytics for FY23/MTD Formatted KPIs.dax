@@ -1,0 +1,11 @@
+MTD Formatted KPIs = 
+VAR _arrow =
+    SWITCH(
+        TRUE(),
+        [MTD Enquiries] > [Previous MTD Enquiries], "▲",
+        [MTD Enquiries] < [Previous MTD Enquiries], "▼",
+        "→"
+    )
+VAR _metrics = [MTD Enquiries]
+RETURN
+    _arrow & " " & FORMAT(_metrics, "0")

@@ -1,0 +1,6 @@
+Enquiries Card Title = 
+"Enquiries - "
+    & FORMAT(
+        MAX('Calendar Master'[Date]),
+        "dd MMM yyyy"
+    )

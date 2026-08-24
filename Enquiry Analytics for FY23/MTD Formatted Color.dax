@@ -1,0 +1,7 @@
+MTD Formatted Color = 
+SWITCH(
+    TRUE(),
+    [MTD Enquiries] > [Previous MTD Enquiries], "Green",
+    [MTD Enquiries] < [Previous MTD Enquiries], "Red",
+    "Gray"
+)

@@ -1,0 +1,5 @@
+MTD Enquiries = 
+CALCULATE(
+    [Total Enquiries],
+    DATESMTD('Calendar Master'[Date])
+)

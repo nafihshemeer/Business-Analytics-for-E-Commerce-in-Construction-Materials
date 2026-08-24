@@ -1,0 +1,2 @@
+Total Enquiries Display = 
+FORMAT([Total Enquiries], "#,##0")

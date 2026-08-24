@@ -1,0 +1,5 @@
+Enquiries for Chart = 
+COALESCE(
+    [Total Enquiries],
+    0
+)

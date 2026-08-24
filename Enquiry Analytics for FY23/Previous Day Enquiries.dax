@@ -1,0 +1,9 @@
+Previous Day Enquiries = 
+VAR SelectedLastDate = MAX('Calendar Master'[Date])
+VAR PreviousDate = SelectedLastDate - 1
+RETURN
+    CALCULATE(
+        [Total Enquiries],
+        REMOVEFILTERS('Calendar Master'[Date]),
+        'Calendar Master'[Date] = PreviousDate
+    )

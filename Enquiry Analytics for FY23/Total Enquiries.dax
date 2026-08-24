@@ -1,0 +1,2 @@
+Total Enquiries = 
+DISTINCTCOUNT('Enquiry Master'[Enquiry ID])

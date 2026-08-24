@@ -1,0 +1,7 @@
+Formatted Color = 
+SWITCH(
+    TRUE(),
+    [Last Day Enquiries] > [Previous Day Enquiries], "Green",
+    [Last Day Enquiries] < [Previous Day Enquiries], "Red",
+    "Gray"
+)

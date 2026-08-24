@@ -1,0 +1,11 @@
+Formatted KPIs = 
+VAR _arrow =
+    SWITCH(
+        TRUE(),
+        [Last Day Enquiries] > [Previous Day Enquiries], "▲",
+        [Last Day Enquiries] < [Previous Day Enquiries], "▼",
+        "→"
+    )
+VAR _metrics = [Last Day Enquiries]
+RETURN
+    _arrow & " " & FORMAT(_metrics, "0")

@@ -1,0 +1,9 @@
+Previous MTD Enquiries = 
+CALCULATE(
+    [Total Enquiries],
+    DATEADD(
+        DATESMTD('Calendar Master'[Date]),
+        -1,
+        MONTH
+    )
+)

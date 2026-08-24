@@ -1,0 +1,7 @@
+Last Day Enquiries = 
+VAR SelectedLastDate = MAX('Calendar Master'[Date])
+RETURN
+    CALCULATE(
+        [Total Enquiries],
+        'Calendar Master'[Date] = SelectedLastDate
+    )

@@ -1,0 +1,6 @@
+MTD Enquiries Card Title = 
+"MTD Enquiries - "
+    & FORMAT(
+        MAX('Calendar Master'[Date]),
+        "MMM yyyy"
+    )
