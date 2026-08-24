@@ -68,15 +68,35 @@ A concise explanation of the visuals along with mentions of relevant DAX queries
      * A measure named "Formatted KPIs" was created to return the Last Day Enquiries and an arrow comparing its trend with Previous Day Enquiries. This measure was displayed on the KPI
      * To obtain colours for rising and falling trends, a measure named "Formatted Color" was created to return Green, Red or Grey colours based on Rising, Falling or Neutral trends respectively
      * To get the title in the format as displayed, a measure named "Enquiries Card Title" was created
-   * Month-to-Date (MTD) enquiries as of the most recent date, compared to the same day in the previous month 
+   * MTD Enquiries: Month-to-Date (MTD) enquiries as of the most recent date, compared to the same day in the previous month
+     * Two measures named "MTD Enquiries" and "Previous MTD Enquiries" were created for comparison
+     * A measure named "MTD Formatted KPIs" was created to return the MTD Enquiries and an arrow comparing its trend with Previous MTD Enquiries. This measure was displayed on the KPI
+     * To obtain colours for rising and falling trends, a measure named "MTD Formatted Color" was created to return Green, Red or Grey colours based on Rising, Falling or Neutral trends respectively
+     * To get the title in the format as displayed, a measure named "MTD Enquiries Card Title" was created
 3. Two filters are placed on the top right below the title bar:
    * Salesperson: To help filter salesperson level data, which would be useful for review meetings
+     * Filters the report based on "Sales Person" from "Sales Employees" sheet
    * Calendar Slicer: To filter data across periods to aid in useful analyses
+     * Filters the report based on "Date" from "Calendar Master"
 4. Monthly Enquiries: A visual explaining the monthly variation of the number of enquiries is presented here. The visual can be drilled down to the day level
+   * X-Axis
+     * "Month Name" from "Calendar Master"
+     * This can be drilled down to the actual "Date" from "Calendar Master"
+   * Y-Axis
+     * A measure named "Enquiries for Chart" was created to show the enquiry trend line on all days, including those on the x-axis with zero enquiries 
 5. Top 10 Customers: A leader-board of the customers generating highest number of enquiries, along with the corresponding salesperson is shown here
-6. Enquiries by Location: The geographical spread in the number of enquiries is shown in a bubble chat
+   * The column named "Customer Name" shows the actual "Customer Name" from "Customer Master"
+   * The column named "Enquiries" counts the number of enquiries from "Enquiry Master" for the customer
+   * The column named "Sales Person" shows the salesperson assigned to the enquiry in the "Enquiry Master" sheet
+   * The table was then sorted in descending order by number of enquiries, and filtered by Customer ID based on top 10 counts of "Enquiry ID"
+6. Enquiries by Location: The geographical spread in the number of enquiries is shown in a bubble chart
+   * A measure named "Map Location" was created from "Pincode Master" concatenating the area name, Pincode and "Chennai" in a single string to help Power BI understand the exact location
 7. Enquiries by Product Category: The breakup of enquiries as per products preferred by the customers is revealed here
+   * The Y-axis shows "Item Name" from "Product Master"
+   * The X-axis counts number of enquiries from "Enquiry Master" sheet
 8. Enquiries by Customer Type: The B2B vs B2C breakup of customers is illustrated here
+   * The legend differentiates "Customer Type" from "Customer Master"
+   * The chart counts number of enquiries from "Enquiry Master" sheet
 
 ### Drilling Down
 The monthly enquiries chart can be drilled down to the day level. For instance, the enquiry statistics for the month of February is presented here:
