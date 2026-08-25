@@ -81,6 +81,11 @@ A concise explanation of the visuals along with mentions of relevant DAX queries
 4. Monthly Enquiries: A visual explaining the monthly variation of the number of enquiries is presented here. The visual can be drilled down to the day level
    * X-Axis
      * "Month Name" from "Calendar Master"
+       * The X-axis shows the months as per the Indian fiscal year 2023 (FY23)
+       * To obtain this measure in Power BI, a new column named "Fiscal Month No" was created to start the months from April and end them with March
+       * A column named "Month Name" was created to return only the month of the given date
+       * The "Month Name" column was sorted by "Fiscal Month No" to arrange it in the order of months as per fiscal year
+       * This column was selected to represent X-xis
      * This can be drilled down to the actual "Date" from "Calendar Master"
    * Y-Axis
      * A measure named "Enquiries for Chart" was created to show the enquiry trend line on all days, including those on the x-axis with zero enquiries 
