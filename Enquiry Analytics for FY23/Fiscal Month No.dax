@@ -1,0 +1,6 @@
+Fiscal Month No = 
+IF(
+    MONTH('Calendar Master'[Date]) >= 4,
+    MONTH('Calendar Master'[Date]) - 3,
+    MONTH('Calendar Master'[Date]) + 9
+)
