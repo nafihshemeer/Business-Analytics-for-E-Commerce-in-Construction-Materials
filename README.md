@@ -27,12 +27,12 @@ The project aims to recreate the following reports using synthetic data based on
 * Transportation and logistics shall be handled by 10 third parties
 
 ## Creation and Integrity of Data
-The data for this project is completely fictional, and any resemblance to real world individuals or firms is coincidental. All the numbers and figures are 'handmade', using a combination of Excel randbetween() function and human judgement. Simplified versions of the Excel sheets (without formulas and queries) used to prepare these reports have been uploaded under the folder named "Data Modelling".  
+The data for this project is completely fictional, and any resemblance to real world individuals or firms is coincidental. All the numbers and figures are 'handmade', using a combination of Excel randbetween() function and human judgement. Simplified versions of the Excel sheets (without formulas and queries) used to prepare these reports have been uploaded under the folder named [Data Modelling](./Data%20Modelling/README.md).  
 
 Minimal AI assistance has been used in this project, particularly for the following:  
 1. Mockarooo to generate customer names
 2. ChatGPT to check mathematical errors and inconsistencies, and assist in handling Excel formulae and DAX queries
 
-Further details about data creation can be viewed in the GitHub folder named Data Modelling.
+Further details about data creation can be viewed in the GitHub folder named [Data Modelling](./Data%20Modelling/README.md).  
 
 Feel free to reach out to me for suggestions, doubts or feedback!
