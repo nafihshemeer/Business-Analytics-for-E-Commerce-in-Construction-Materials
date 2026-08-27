@@ -1,6 +1,6 @@
 # Enquiry Analytics for FY23
 
-The report presents a snapshot of customer enquiries received by the e-commerce firm in Indian fiscal year 2022-23 (FY23 - April 1, 2022 to March 31, 2023).
+The report presents a snapshot of customer enquiries received by the e-commerce platform during Indian fiscal year 2022-23 (FY23 - April 1, 2022 to March 31, 2023).
 
 ## Table of Contents
 1. [Background and Assumptions](#background-and-assumptions)
@@ -17,22 +17,22 @@ The report presents a snapshot of customer enquiries received by the e-commerce 
 6. [Conclusion](#conclusion)
 
 ## Background and Assumptions
-An enquiry is generated when a customer requires a product for his/her construction site. The customer is assigned a salesperson, and factors like product requirements, site location, delivery date and customer budget are discussed.  It is the first step in the business transaction. The calculations and logic involved behind creating the enquiries in this analysis have been dealt with in detail in the folder named "Data Modelling".  
+An enquiry is generated when a customer requires a product for his/her construction site. The customer is assigned a salesperson, and factors like product requirements, site location, delivery date and customer budget are discussed.  It is the first step in the business transaction. The calculations and logic involved behind creating the enquiries in this analysis have been dealt with in detail in the folder named [Data Modelling](../Data%20Modelling).  
 
 Some context and assumptions behind this report are as follows:
 1. The analysis pertains to the Chennai region (Chennai city and surrounding urban agglomeration) for the period of April 1, 2022 to March 31, 2023
-2. Products under 4 categories are dealt with namely Cement, AAC Blocks, Steel and Concrete
-3. A total of 500 customers have generated 5,944 enquiries in the period under consideration
-4. The customers are handled by 10 salespersons
-5. Each enquiry is assumed to correspond to one product
-6. Sundays, holidays and days affected by Cyclone have been assumed to have zero enquiries
-7. Postal Pincode has been taken as the proxy for the location of the construction site for which the enquiry is being generated, and need not be identical to the actual address of the customer
+2. Products under 4 categories are dealt with namely Cement, AAC Blocks, Steel and Concrete.
+3. A total of 500 customers have generated 5,944 enquiries in the period under consideration.
+4. The customers are handled by 10 salespersons.
+5. Each enquiry is assumed to correspond to one product.
+6. Zero enquiries have been assumed for Sundays, holidays and on the days affected by a Cyclone.
+7. Postal Pincode has been taken as the proxy for the location of the construction site for which the enquiry is being generated, and need not be identical to the actual address of the customer.
 8. Minimal AI assistance has been used in this project, particularly for the following:
    * Mockarooo to generate customer names
-   * ChatGPT to check for mathematical errors and inconsistencies, and assist in handling Excel formulae and DAX queries. The DAX queries have been uploaded in this folder.
+   * ChatGPT to check for mathematical errors and inconsistencies, and assist in handling Excel formulae and DAX measures. The DAX measures have been uploaded in this folder.
 
 ## Enquiry Analytics
-The file named "Enquiries Analytics for FY23.pbix" contains an interactive PowerBI dashboard to analyse the enquiries received on FY23. The interactive dashboard cannot be embedded here thanks to Microsoft's rigid account policies.  
+The file named "Enquiries Analytics for FY23.pbix" contains an interactive Power BI dashboard to analyse the enquiries received on FY23. The interactive Power BI report cannot be embedded here due to Microsoft's work account policies, and thus the relevant screenshots have been posted here.  
 
 ### Relationship Model
 The star schema is as follows: 
@@ -45,7 +45,7 @@ The star schema is as follows:
 |	Customer ID (Enquiry Master)	|	cust_id (Customer Master)	|	Many to one (*:1)	|	Single	|
 |	Assigned To (Enquiry Master)	|	Employee Name (Sales Team)	|	Many to one (*:1)	|	Single	|
 |	Product (Enquiry Master)	|	Item Name (Product Master)	|	Many to one (*:1)	|	Single	|
-|	Assigned Date (Enquiry Master)	|	Date (Calender Master)	|	Many to one (*:1)	|	Single	|
+|	Assigned Date (Enquiry Master)	|	Date (Calendar Master)	|	Many to one (*:1)	|	Single	|
 |	Location (Enquiry Master)	|	Area (Enquiry Pincode)	|	Many to one (*:1)	|	Single	|
 
 Thus the relationships were mapped between the tables.
@@ -55,14 +55,14 @@ A screenshot of the report has been pasted below:
 <img width="2075" height="1200" alt="Enquiries Analytics for FY23_page-0001" src="https://github.com/user-attachments/assets/f917aa35-57f3-4ba2-a01f-29bc39bbc69c" />
 
 
-A concise explanation of the visuals along with mentions of relevant DAX queries are given below (The DAX queries can be viewed in the respective files as mentioned):
+A concise explanation of the visuals along with mentions of relevant DAX measures are given below (The DAX measures can be viewed in the respective files as mentioned):
 1. The top consists of the title bar
 2. The Key Performance Indicators (KPIs) are placed in the top left below the title bar, consisting of:
    * Total Enquiries: Total enquiries generated in the period under consideration
      * A measure named "Total Enquiries" was created which listed the distinct count of enquiries in the "Enquiry Master" sheet
-     * Another measure named "Total Enquiries Display" was created by formatting Total Enquiries into thousands with comma separator
+     * Another measure named "Total Enquiries Display" was created to formatting Total Enquiries into thousands with comma separator (#,##0).
    * Total customers
-     * Count of customer IDs in "Customer Master" sheet
+     * Count of customer IDs in the "Customer Master" sheet
    * Enquiries - Most Recent Date: Enquiries as of the most recent date, compared to the previous date
      * Two measures namely "Last Day Enquiries" and "Previous Day Enquiries" were created to return the most recent date and the date before that respectively
      * A measure named "Formatted KPIs" was created to return the Last Day Enquiries and an arrow comparing its trend with Previous Day Enquiries. This measure was displayed on the KPI
@@ -76,17 +76,17 @@ A concise explanation of the visuals along with mentions of relevant DAX queries
 3. Two filters are placed on the top right below the title bar:
    * Salesperson: To help filter salesperson level data, which would be useful for review meetings
      * Filters the report based on "Sales Person" from "Sales Employees" sheet
-   * Calendar Slicer: To filter data across periods to aid in useful analyses
+   * Calendar Slicer: To filter data across periods and help obtain a temporal picture
      * Filters the report based on "Date" from "Calendar Master"
 4. Monthly Enquiries: A visual explaining the monthly variation of the number of enquiries is presented here. The visual can be drilled down to the day level
    * X-Axis
      * "Month Name" from "Calendar Master"
        * The X-axis shows the months as per the Indian fiscal year 2023 (FY23)
-       * To obtain this measure in Power BI, a new column named "Fiscal Month No" was created to start the months from April and end them with March
+       * To obtain this measure in Power BI, a new column named "Fiscal Month No" was created to start the months from April (1) and end them on March (12)
        * A column named "Month Name" was created to return only the month of the given date
-       * The "Month Name" column was sorted by "Fiscal Month No" to arrange it in the order of months as per fiscal year
-       * This column was selected to represent X-xis
-     * This can be drilled down to the actual "Date" from "Calendar Master"
+       * The "Month Name" column was sorted by "Fiscal Month No" to arrange it in the order of months as per the fiscal year
+       * This column was selected to represent X-axis
+     * The X-axis can be drilled down to the actual "Date" from "Calendar Master"
    * Y-Axis
      * A measure named "Enquiries for Chart" was created to show the enquiry trend line on all days, including those on the x-axis with zero enquiries 
 5. Top 10 Customers: A leader-board of the customers generating highest number of enquiries, along with the corresponding salesperson is shown here
@@ -95,25 +95,23 @@ A concise explanation of the visuals along with mentions of relevant DAX queries
    * The column named "Sales Person" shows the salesperson assigned to the enquiry in the "Enquiry Master" sheet
    * The table was then sorted in descending order by number of enquiries, and filtered by Customer ID based on top 10 counts of "Enquiry ID"
 6. Enquiries by Location: The geographical spread in the number of enquiries is shown in a bubble chart
-   * A measure named "Map Location" was created from "Pincode Master" concatenating the area name, Pincode and "Chennai" in a single string to help Power BI understand the exact location
+   * A measure named "Map Location" was created from "Pincode Master" concatenating the area name, Pincode and "Chennai" into a single string, thus helping Power BI understand the exact location
 7. Enquiries by Product Category: The breakup of enquiries as per products preferred by the customers is revealed here
    * The Y-axis shows "Item Name" from "Product Master"
    * The X-axis counts number of enquiries from "Enquiry Master" sheet
 8. Enquiries by Customer Type: The B2B vs B2C breakup of customers is illustrated here
-   * The legend differentiates "Customer Type" from "Customer Master"
+   * The legend differentiates the "Customer Type" obtained from "Customer Master"
    * The chart counts number of enquiries from "Enquiry Master" sheet
 
 ### Drilling Down
 The monthly enquiries chart can be drilled down to the day level. For instance, the enquiry statistics for the month of February is presented here:
 <img width="2075" height="1200" alt="February Daily Analytics_page-0001" src="https://github.com/user-attachments/assets/61937219-959e-455d-85bd-eac277addd89" />
 
-The interactions can be clearly seen in this report when the user wants to probe one aspect of a chart deeply.  
-
 ## Business Observations and Inferences
 From the report, the following observations can be made:
 1. Monthly Trends
    1. The business reflects a general rising trend, with dips seen in September-October and December.
-   2. The September-October dip seems to be consistent with the numbers in April-June, and the high in August is the likely anomaly
+   2. The September-October dip seems to be consistent with the numbers observed  in  April-June, and the high in August is the likely anomaly
    3. The high in August appears to coincide with the fact that the digital marketing campaign was initiated in July. The reach towards the leads was boosted by Facebook as we were its new customer, and that may have contributed to the sudden spike in enquiries. However, the artificial free boost was revoked after August, showing the dip in September.
    4. The December dip is explained by a multitude of external factors:
       * The cyclone Mandous which made landfall which made landfall off the coast of the Bay of Bengal affected the construction industry during 10-12 December, 2022
