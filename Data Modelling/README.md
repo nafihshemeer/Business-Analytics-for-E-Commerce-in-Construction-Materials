@@ -17,7 +17,7 @@ The mechanism and logic behind creation and integrity of the data for this proje
 The project simulates selected aspects of an e-commerce business firm in Chennai, Tamil Nadu, which deals with four product categories namely Cement, AAC Blocks, Steel and Concrete. The data reflect a snapshot of Indian fiscal year 2022-23 (FY23 - April 1, 2022 to March 31, 2023). Therefore local factors like customs, naming conventions and regional postal Pincodes have been infused into the data.
 
 ## Employee Data
-A total of 23 employees have been involved in the transactions pertaining to this analysis. The employees have been assigned a unique ID, and the names have been inspired by popular movie characters.  
+A total of 23 employees were involved in the transactions pertaining to this analysis. Each employee was assigned a unique ID, and their names were created based on popular movie characters.  
 
 The data pertaining to employees are as presented in this table:  
 | Employee Division | Excel Sheet | Remarks |
