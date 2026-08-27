@@ -37,7 +37,7 @@ The file named "Enquiries Analytics for FY23.pbix" contains an interactive Power
 ### Relationship Model
 The star schema is as follows: 
 
-<img width="1473" height="653" alt="image" src="https://github.com/user-attachments/assets/4f036bd6-3ee0-438d-8985-bc8c7e5cb785" />  
+<img width="1292" height="645" alt="Enquiry Star Schema" src="https://github.com/user-attachments/assets/c19d3e77-7153-4b7f-b305-09ea890f0ae3" />
 
 
 |	Column (From Table)	|	Column (To Table)	|	Cardinality	|	Cross-filter Direction	|
