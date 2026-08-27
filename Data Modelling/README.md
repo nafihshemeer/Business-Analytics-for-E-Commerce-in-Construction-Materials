@@ -217,6 +217,6 @@ A summary of the work done is as follows:
 
 Thus, the data for an e-commerce business facing a general rising trend in the number of enquiries for FY23 was constructed.  
 
-The business analytics for enquiries in FY23 can be viewed in the folder named [Enquiry Analytics for FY23](./Enquiry%20Analytics%20for%20FY23).  
+The business analytics for enquiries in FY23 can be viewed in the folder named [Enquiry Analytics for FY23](../Enquiry%20Analytics%20for%20FY23).  
 
 Feel free to contact me for queries and feedback!
